@@ -82,7 +82,7 @@ namespace BankingSystem
                         DefineInterestRules();
                         break;
                     case "P":
-                        PrintStatement();
+                        PrintStatementMenu();
                         break;
                 }
             } while (input?.ToUpper() != "Q");
@@ -162,7 +162,7 @@ namespace BankingSystem
             }
         }
 
-        private void PrintAccountStatement()
+        private void PrintStatementMenu()
         {
             Console.WriteLine("Please enter account and month to generate the statement <Account> <Year><Month> " +
                               "(or enter blank to go back to main menu):");
